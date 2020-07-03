@@ -51,7 +51,7 @@ nav ul a{
 .mainfooter p{
 	padding: 5px 0 0 10px;
 	color: #666;
-	text-align: center;
+	text-align: center; 
 
 }
 .maincontent{
@@ -152,9 +152,22 @@ aside h2{
 
 
 /* working with responsiveness */
+/* for screens less than 769px*/
 
-@media only screen and (min-width: 150px) and (max-width: 600px) {
+@media  (max-width: 769px) {
+@keyframes animate-background{
+	from{background-color:#eaeaea;}
+	to{background-color:black;}
+}
 
+@keyframes contact{
+	0%   {background-color: black;}
+	25%{ background-color:black;}
+	75%{background-color:white;}
+    100% {background-color:white;}
+
+
+}
 
 
 
@@ -162,6 +175,9 @@ body{
 	margin: 2% auto;
 	background-color:black;
 	width:90%;
+	animation-name: animate-background;
+	animation-duration:8s;
+	
 	
 }
 nav{
@@ -179,6 +195,14 @@ nav ul a li{
 	
 }
 
+img{
+	width:100%;
+	height:30%;
+	border-radius:20px;
+	float:center;
+	padding:none;
+	margin:none;
+}
 
 
 nav ul a{
@@ -192,6 +216,8 @@ nav ul a{
 	
 	
 }
+
+
 .maincontent{
 	width: 100%;
 	margin: 2% 0 0 0;
@@ -202,6 +228,9 @@ nav ul a{
 	overflow: hidden;
 	float: left;
 	display: block;
+	text-align:justify;
+	animation-name:contact;
+	animation-duration:5s;
 }
 
 .contact{
@@ -212,7 +241,9 @@ nav ul a{
 	-moz-border-radius:5px;
 	-webkit-border-radius:5px;
     float: left;
-    height: 500px;
+	height: 500px;
+	animation-name:contact;
+	animation-duration:5s;
 }
 
 aside{
@@ -224,6 +255,10 @@ aside{
 	-webkit-border-radius:5px;
 	float: left;
 	display:block;
+	animation-name:contact;
+	animation-duration:5s;
+	
+	
 }
 
 .mainfooter{
@@ -253,3 +288,120 @@ aside{
 
 
 }
+
+/*for screens less than 394*/
+
+@media  (max-width: 394px) {
+	
+	
+	
+	
+	body{
+		margin: 2% auto;
+		background-color:black;
+		width:100%;
+		
+	}
+	nav{
+		background: transparent;
+	}
+	
+	
+		
+	nav ul a li{
+		text-decoration: none;
+		display: inline-block;
+		padding:2%;
+		margin:0 auto;
+		text-align: center;
+		
+	}
+	
+	img{
+		width:100%;
+		height:30%;
+		border-radius:20px;
+	}
+
+	h2.h1{
+		display:block;
+		margin-top:50px;
+	}
+	
+	
+	nav ul a{
+		display:inline;
+		text-decoration: none;
+		color:white;
+		background-color: #cf5c3f;
+		padding:2% 0 2.5% 0 ;
+	
+	
+		
+		
+	}
+	
+	
+	.maincontent{
+		width: 100%;
+		margin: 2% 0 0 0;
+		background-color: white;
+		border-radius: 5px;
+		-moz-border-radius:5px;
+		-webkit-border-radius:5px;
+		overflow: hidden;
+		float: left;
+		display: block;
+		height:600px;
+		text-align: justify;
+	}
+	
+	.contact{
+		width: 100%;
+		background-color: white;
+		border-radius: 5px;
+		-moz-border-radius:5px;
+		-webkit-border-radius:5px;
+		float: left;
+		height: 600px;
+		margin-top:2%;
+	}
+	
+	
+	.mainfooter{
+		margin:2% 0 0 0;
+		background-color: white;
+		width:100%;
+		height:10%;
+		border-radius: 5px;
+		-moz-border-radius:5px;
+		-webkit-border-radius:5px;
+		float: left;
+	}
+	.mainfooter p{
+		padding: 5px 0 0 10px;
+		color: #666;
+		text-align: center;
+	
+	}
+	aside{
+		width: 100%;
+		margin:2% 0 0 0;
+		background-color: white;
+		border-radius: 5px;
+		-moz-border-radius:5px;
+		-webkit-border-radius:5px;
+		float: left;
+		height:600px;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	}
