@@ -1,0 +1,255 @@
+body{
+	font-family: 'Titillium Web', sans-serif;
+	background-color:black;
+    width:100%;
+    font-size: 16px;
+    line-height: 1
+}
+img{
+	width:100%;
+	height:30%;
+	border-radius:20px;
+}
+nav{
+	background-color: #666;
+	height:10%;
+	width:100%;
+	border-radius: 5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+}
+nav ul a li{
+	text-decoration: none;
+	display: inline-block;
+	padding:2%;
+}
+
+
+
+nav ul a{
+	display:inline;
+	text-decoration: none;
+	color:white;
+	background-color: #cf5c3f;
+	padding:2% 0 2.4% 0 ;
+
+
+	
+	
+}
+
+.mainfooter{
+	margin:2% 0 0 0;
+	background-color: white;
+	width:100%;
+	height:10%;
+	border-radius: 5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	float: left;
+}
+.mainfooter p{
+	padding: 5px 0 0 10px;
+	color: #666;
+	text-align: center;
+
+}
+.maincontent{
+	width: 50%;
+	margin: 2% 0 0 0;
+	background-color: white;
+	border-radius: 5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	overflow: hidden;
+    float: left;
+    height:500px;
+}
+
+.contact{
+    width: 28%;
+	margin:2% 0 0 1%;
+	background-color: white;
+	border-radius: 5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+    float: left;
+    height: 500px;
+}
+aside{
+	width: 20%;
+	margin:2% 0 0 1%;
+	background-color: white;
+	border-radius: 5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+    float: left;
+    height:500px;
+}
+content p, aside p{
+	line-height: 1.8;
+	padding: 0 5% 0 5%;
+}
+.mainarticle header h2, .mainarticle .articleinfo .articleinfofooter{
+	padding: 0 5% 0 5%;
+}
+.mainarticle .articleinfo .articleinfofooter{
+	font-variant: small-caps;
+}
+ol{
+    padding: 0 5% 0 10%;
+    
+}
+
+a:link{
+	border-radius: 5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	height:100%;
+    margin: 0 auto;
+	
+
+	
+}
+a:visted{
+	background-color:white;
+	color: blue;
+}
+a:hover {
+	background-color:white;
+	color: blue;
+
+}
+a:active{
+	background-color:white;
+	color: blue;
+
+
+}
+
+
+aside h2{
+	padding:0 0 0 5%;
+	color:#cf5c3f;
+}
+.maincontent .mainarticle header h2{
+	color:#cf5c3f ;
+	display: inline-block;
+	overflow: hidden;
+	margin:0;
+}
+.maincontent .mainarticle header > img{
+	width:100px;
+	height:100;
+	border-radius:50px;
+	-moz-border-radius:50px;
+	-webkit-border-radius:50px;
+	margin: 5% 0 0 50%;
+	border:1.5px #cf5c3f dotted;
+	 
+
+}
+
+
+/* working with responsiveness */
+
+@media only screen and (min-width: 150px) and (max-width: 600px) {
+
+
+
+
+body{
+	margin: 2% auto;
+	background-color:black;
+	width:90%;
+	
+}
+nav{
+	background: transparent;
+}
+
+
+	
+nav ul a li{
+	text-decoration: none;
+	display: inline-block;
+	padding:2%;
+	margin:0 auto;
+	text-align: center;
+	
+}
+
+
+
+nav ul a{
+	display:inline;
+	text-decoration: none;
+	color:white;
+	background-color: #cf5c3f;
+	padding:2% 0 2.5% 0 ;
+
+
+	
+	
+}
+.maincontent{
+	width: 100%;
+	margin: 2% 0 0 0;
+	background-color: white;
+	border-radius: 5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	overflow: hidden;
+	float: left;
+	display: block;
+}
+
+.contact{
+    width: 100%;
+	margin:0 auto;
+	background-color: white;
+	border-radius: 5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+    float: left;
+    height: 500px;
+}
+
+aside{
+	width: 100%;
+	margin:2% auto;
+	background-color: white;
+	border-radius: 5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	float: left;
+	display:block;
+}
+
+.mainfooter{
+	margin:2% 0 0 0;
+	background-color: white;
+	width:100%;
+	height:10%;
+	border-radius: 5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	float: left;
+}
+.mainfooter p{
+	padding: 5px 0 0 10px;
+	color: #666;
+	text-align: center;
+
+}
+
+
+
+
+
+
+
+
+
+
+}
