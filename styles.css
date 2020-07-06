@@ -3,39 +3,60 @@ body{
 	background-color:black;
     width:100%;
     font-size: 16px;
-    line-height: 1
+	line-height: 1;
+	overflow: scroll;
 }
 img{
 	width:100%;
 	height:30%;
 	border-radius:20px;
 }
+
+img.logo{
+	display:inline;
+	width:700px;
+	height:500px;
+	margin-top:-150px;
+	margin-left:-90px;
+	margin-bottom:-300px;
+	position:relative;
+
+	
+}
 nav{
-	background-color: #666;
-	height:10%;
-	width:100%;
-	border-radius: 5px;
-	-moz-border-radius:5px;
-	-webkit-border-radius:5px;
+	background:transparent;
+	margin:none;
+	
 }
 nav ul a li{
 	text-decoration: none;
-	display: inline-block;
-	padding:2%;
+	display: inline;
+	padding:10px;
+	
+	
 }
+
 
 
 
 nav ul a{
 	display:inline;
 	text-decoration: none;
-	color:white;
-	background-color: #cf5c3f;
-	padding:2% 0 2.4% 0 ;
+	color:#cf5c3f;
+	background:transparent;
+	padding:1% 0 1% 0;
+	border:2px solid #cf5c3f;
+	
+	
+	
 
 
 	
 	
+}
+
+ul{
+	margin:2% 40% 2% 40%;
 }
 
 .mainfooter{
@@ -67,8 +88,8 @@ nav ul a{
 }
 
 .contact{
-    width: 28%;
-	margin:2% 0 0 1%;
+    width: 27%;
+	margin:2% 1% 0 1%;
 	background-color: white;
 	border-radius: 5px;
 	-moz-border-radius:5px;
@@ -106,7 +127,7 @@ a:link{
 	-moz-border-radius:5px;
 	-webkit-border-radius:5px;
 	height:100%;
-    margin: 0 auto;
+    margin:0 5% 0 0;
 	
 
 	
@@ -117,7 +138,7 @@ a:visted{
 }
 a:hover {
 	background-color:white;
-	color: blue;
+	color: #cf5c3f;
 
 }
 a:active{
@@ -172,10 +193,10 @@ aside h2{
 
 
 body{
-	margin: 2% auto;
+	
 	background-color:black;
-	width:90%;
-	animation-name: animate-background;
+	width:100%;
+	animation-name:animate-background;
 	animation-duration:8s;
 	
 	
@@ -195,6 +216,18 @@ nav ul a li{
 	
 }
 
+img.logo{
+	display:inline;
+	width:700px;
+	height:500px;
+	margin-top:-150px;
+	margin-left:-90px;
+	margin-bottom:-300px;
+	position:relative;
+
+	
+}
+
 img{
 	width:100%;
 	height:30%;
@@ -204,13 +237,40 @@ img{
 	margin:none;
 }
 
+a:link{
+	border-radius: 5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	height:100%;
+    margin:0 5% 0 0;
+	
+
+	
+}
+a:visted{
+	background-color:white;
+	color: blue;
+}
+a:hover {
+	background-color:white;
+	color: #cf5c3f;
+
+}
+a:active{
+	background-color:white;
+	color: blue;
+
+
+}
+
 
 nav ul a{
-	display:inline;
+	display:inline-block;
 	text-decoration: none;
 	color:white;
 	background-color: #cf5c3f;
 	padding:2% 0 2.5% 0 ;
+	margin-left:50%;
 
 
 	
@@ -291,7 +351,20 @@ aside{
 
 /*for screens less than 394*/
 
-@media  (max-width: 394px) {
+@media  (max-width: 394px){
+	@keyframes animate-background{
+		from{background-color:#eaeaea;}
+		to{background-color:black;}
+	}
+	
+	@keyframes contact{
+		0%   {background-color: black;}
+		25%{ background-color:black;}
+		75%{background-color:white;}
+		100% {background-color:white;}
+	
+	
+	}
 	
 	
 	
@@ -300,7 +373,8 @@ aside{
 		margin: 2% auto;
 		background-color:black;
 		width:100%;
-		
+		animation-name:animate-background;
+		animation-duration:8s;
 	}
 	nav{
 		background: transparent;
@@ -323,9 +397,47 @@ aside{
 		border-radius:20px;
 	}
 
+	img.logo{
+		display:inline;
+		width:700px;
+		height:500px;
+		margin-top:-150px;
+		margin-left:-90px;
+		margin-bottom:-300px;
+		position:relative;
+	
+		
+	}
+
 	h2.h1{
 		display:block;
 		margin-top:50px;
+	}
+
+	a:link{
+		border-radius: 5px;
+		-moz-border-radius:5px;
+		-webkit-border-radius:5px;
+		height:100%;
+		margin:0 5% 0 0;
+		
+	
+		
+	}
+	a:visted{
+		background-color:white;
+		color: blue;
+	}
+	a:hover {
+		background-color:white;
+		color: #cf5c3f;
+	
+	}
+	a:active{
+		background-color:white;
+		color: blue;
+	
+	
 	}
 	
 	
@@ -349,11 +461,13 @@ aside{
 		border-radius: 5px;
 		-moz-border-radius:5px;
 		-webkit-border-radius:5px;
-		overflow: hidden;
+		overflow: scroll;
 		float: left;
 		display: block;
 		height:600px;
 		text-align: justify;
+		animation-name:contact;
+		animation-duration:5s;
 	}
 	
 	.contact{
@@ -365,6 +479,8 @@ aside{
 		float: left;
 		height: 600px;
 		margin-top:2%;
+		animation-name:contact;
+		animation-duration:5s;
 	}
 	
 	
@@ -393,6 +509,8 @@ aside{
 		-webkit-border-radius:5px;
 		float: left;
 		height:600px;
+		animation-name:contact;
+		animation-duration:5s;
 	}
 	
 	
