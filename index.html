@@ -1,14 +1,19 @@
-
 <!doctype html>
 <html>
 <head>
-     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
+	 <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
+	 <script src="https://kit.fontawesome.com/b023f42c5e.js" crossorigin="anonymous"></script>
+	 
     <link rel ="stylesheet" type ="text/css" href ="styles.css" >
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title> This project will be added to my portfolio</title><!-- this might eventually be my website -->
 </head>
 <body> 
+		<button class="sidebar-toggle">
+			<i class="fas fa-bars"></i>
+
+		</button>
 	<header>
 		
 		<nav>
@@ -19,8 +24,46 @@
 				<a href = " portfolio.html " ><li class ="paddingissue">My portfolio</li></a>
 				
 			</ul>
+			
 		</nav>
 	</header>
+	<!-- menu btn-->
+	
+	<!-- menu bar-->
+	<aside class = "menu">
+		<button class="close-btn">
+				<i class="fas fa-times"></i>
+
+		</button>
+		<ul>
+
+			<li><a href = "index.html" >Home</a></li>
+			<li><a href = " portfolio.html " ><li class ="paddingissue">My portfolio</a></li>
+			<li><a href ="ialsowrite.html">blog</a></li>
+		</ul>
+
+
+
+		<div class ="socialicon">
+				<button class="github">
+						<i class="fab fa-github-square"></i>
+				 </button>
+					
+				<button class="twitter">
+						<i class="fab fa-twitter"></i>
+				</button>
+		
+				<button class="linkedin">
+						<i class="fab fa-linkedin"></i>
+				</button>
+
+
+		</div>
+		
+
+
+	</aside>
+	<!--end of menu-->
 	<div class ="maincontent">
 		
 		<article class = "mainarticle">
@@ -54,6 +97,10 @@
 		<li>javascript: will be used to handle interactivity on the webpage, make it dynamic</li>
 		<li>php: in conjunction with mysqli will be used to handle the backend, database, process forms</li>
 		 </p>	
+
+		 <button class="github">
+				<i class="fab fa-github-square fa-2x"></i>
+		 </button>
 		
     </aside>
     
@@ -61,7 +108,15 @@
         <h2>contact</h2>
         <p> would you like to contact me for your next project? 
             Are you all abput simplicity? then, i guess you are in the right place.
-        </p>
+		</p>
+		
+		<button class="twitter">
+				<i class="fab fa-twitter fa-2x"></i>
+		</button>
+
+		<button class="linkedin">
+				<i class="fab fa-linkedin fa-2x"></i>
+		</button>
 
 
 
@@ -77,7 +132,8 @@
 
 
 
-
+	
     <footer class ="mainfooter"> <p>  &copy; 2020. Olarinre Ayobami.</p> </footer>
 </body>
+<script src ="jsinteract.js"></script>
 </html>

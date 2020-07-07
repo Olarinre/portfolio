@@ -14,10 +14,10 @@ img{
 
 img.logo{
 	display:inline;
-	width:700px;
+	width:500px;
 	height:500px;
 	margin-top:-150px;
-	margin-left:-90px;
+	margin-left:-80px;
 	margin-bottom:-300px;
 	position:relative;
 
@@ -56,7 +56,7 @@ nav ul a{
 }
 
 ul{
-	margin:2% 40% 2% 40%;
+	margin:2% 30% 2% 40%;
 }
 
 .mainfooter{
@@ -167,15 +167,80 @@ aside h2{
 	-webkit-border-radius:50px;
 	margin: 5% 0 0 50%;
 	border:1.5px #cf5c3f dotted;
+
 	 
 
 }
 
+.twitter, .linkedin{
+	color:rgb(0, 89, 255);
+	border:none;
+	margin:270px 0 0 0;
+}
+
+.socialicon{
+	display:none;
+	
+}
+
+.github{
+	display:inline;
+	border:none;
+	margin:50px 0 0 80px;
+	
+}
+
+.sidebar-toggle{
+	display:none;
+	
+}
+
+
+
+.menu{
+	display:none;
+	
+	
+  }
+
+.menuhide{	
+	display:none;
+	
+
+}
+
+.menu ul{
+	display:none;
+	
+	
+}
+
+
+.close-btn{
+	display:none;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* working with responsiveness */
-/* for screens less than 769px*/
+/* for screens less than 768px*/
 
-@media  (max-width: 769px) {
+@media  (max-width: 1024px) {
 @keyframes animate-background{
 	from{background-color:#eaeaea;}
 	to{background-color:black;}
@@ -193,9 +258,9 @@ aside h2{
 
 
 body{
-	
+	margin:0 auto;
 	background-color:black;
-	width:100%;
+	width:90%;
 	animation-name:animate-background;
 	animation-duration:8s;
 	
@@ -209,21 +274,21 @@ nav{
 	
 nav ul a li{
 	text-decoration: none;
-	display: inline-block;
+	display: inline;
 	padding:2%;
-	margin:0 auto;
 	text-align: center;
 	
 }
 
 img.logo{
 	display:inline;
-	width:700px;
+	width:400px;
 	height:500px;
-	margin-top:-150px;
-	margin-left:-90px;
-	margin-bottom:-300px;
+	margin-top:0px;
+	margin-left:-60px;
+	margin-bottom:-150px;
 	position:relative;
+	float:left;
 
 	
 }
@@ -242,7 +307,7 @@ a:link{
 	-moz-border-radius:5px;
 	-webkit-border-radius:5px;
 	height:100%;
-    margin:0 5% 0 0;
+    margin-bottom:-50px;
 	
 
 	
@@ -265,18 +330,22 @@ a:active{
 
 
 nav ul a{
-	display:inline-block;
+	display:inline;
 	text-decoration: none;
 	color:white;
 	background-color: #cf5c3f;
 	padding:2% 0 2.5% 0 ;
-	margin-left:50%;
+	
 
 
 	
 	
 }
 
+ul{
+	margin:2% 0 0 40%;
+	display:inline-block;
+}
 
 .maincontent{
 	width: 100%;
@@ -338,6 +407,105 @@ aside{
 
 }
 
+/* menu btn*/
+
+.sidebar-toggle{
+	display:inline;
+	position:absolute;
+	left:90%;
+	top:70px;
+	position:fixed;
+	cursor: pointer;
+	animation: bounce 2s ease-in-out infinite;
+	
+}
+
+@keyframes bounce {
+	0% {
+	  transform: scale(1);
+	}
+	50% {
+	  transform: scale(1.5);
+	}
+	100% {
+	  transform: scale(1);
+	}
+  }
+
+
+.menu{
+	background-color:#eaeaea;
+	width:200px;
+	height:500px;	
+	position: fixed;
+	transform:translate(100%);
+	
+	
+  }
+
+.menuhide{	
+	visibility:hidden;
+	background-color:#eaeaea;
+	width:200px;
+	height:500px;	
+	position: absolute;
+	left:-100%;
+	display:none;
+	
+
+}
+
+.menu ul{
+	margin-top:3em;
+	list-style-type: none;
+	margin-left:-20px;;
+	display:block;
+	line-height:2;
+	
+}
+
+.socialicon{
+	display:inline;
+	justify-content: center;
+	margin-top:200px;
+	
+	
+	
+}
+
+.github{
+	display:inline;
+	margin-left:40%;
+	margin-bottom:-50px;
+	border:none;
+
+}
+
+.twitter, .linkedin{
+	border:none;
+}
+.fa-times, .fa-bars{
+	color:red;
+}
+.menu ul li a{
+	text-decoration: none;
+	display:inline-block;
+}
+
+.close-btn{
+	position: absolute;	
+	left:170px;
+
+
+}
+
+.fa-twitter,.fa-linkedin{
+	color:blue;
+}
+
+
+
+
 
 
 
@@ -349,9 +517,9 @@ aside{
 
 }
 
-/*for screens less than 394*/
+/*for screens less than 450*/
 
-@media  (max-width: 394px){
+@media  (max-width: 450px){
 	@keyframes animate-background{
 		from{background-color:#eaeaea;}
 		to{background-color:black;}
@@ -370,7 +538,7 @@ aside{
 	
 	
 	body{
-		margin: 2% auto;
+		
 		background-color:black;
 		width:100%;
 		animation-name:animate-background;
@@ -382,14 +550,7 @@ aside{
 	
 	
 		
-	nav ul a li{
-		text-decoration: none;
-		display: inline-block;
-		padding:2%;
-		margin:0 auto;
-		text-align: center;
-		
-	}
+	
 	
 	img{
 		width:100%;
@@ -397,14 +558,21 @@ aside{
 		border-radius:20px;
 	}
 
+	showmenu{
+
+	}
+	unshowmenu{
+
+	}
+
 	img.logo{
 		display:inline;
-		width:700px;
+		width:90%;
 		height:500px;
 		margin-top:-150px;
-		margin-left:-90px;
-		margin-bottom:-300px;
-		position:relative;
+		margin-left:-50px;
+		margin-bottom:-250px;
+		
 	
 		
 	}
@@ -414,44 +582,7 @@ aside{
 		margin-top:50px;
 	}
 
-	a:link{
-		border-radius: 5px;
-		-moz-border-radius:5px;
-		-webkit-border-radius:5px;
-		height:100%;
-		margin:0 5% 0 0;
-		
 	
-		
-	}
-	a:visted{
-		background-color:white;
-		color: blue;
-	}
-	a:hover {
-		background-color:white;
-		color: #cf5c3f;
-	
-	}
-	a:active{
-		background-color:white;
-		color: blue;
-	
-	
-	}
-	
-	
-	nav ul a{
-		display:inline;
-		text-decoration: none;
-		color:white;
-		background-color: #cf5c3f;
-		padding:2% 0 2.5% 0 ;
-	
-	
-		
-		
-	}
 	
 	
 	.maincontent{
@@ -512,6 +643,102 @@ aside{
 		animation-name:contact;
 		animation-duration:5s;
 	}
+
+	.sidebar-toggle{
+		display:inline;
+		position:absolute;
+		left:90%;
+		top:70px;
+		position:fixed;
+		cursor: pointer;
+		animation: bounce 2s ease-in-out infinite;
+		
+	}
+	
+	@keyframes bounce {
+		0% {
+		  transform: scale(1);
+		}
+		50% {
+		  transform: scale(1.5);
+		}
+		100% {
+		  transform: scale(1);
+		}
+	  }
+	
+	
+	.menu{
+		background-color:#eaeaea;
+		width:200px;
+		height:500px;	
+		position: fixed;
+		transform:translate(100%);
+		
+		
+	  }
+	
+	.menuhide{	
+		visibility:hidden;
+		background-color:#eaeaea;
+		width:200px;
+		height:500px;	
+		position: absolute;
+		left:-100%;
+		display:none;
+		
+	
+	}
+	
+	.menu ul{
+		margin-top:3em;
+		list-style-type: none;
+		margin-left:-20px;;
+		display:block;
+		line-height:2;
+		
+	}
+	
+	.socialicon{
+		display:inline;
+		justify-content: center;
+		margin-top:200px;
+		
+		
+		
+	}
+	
+	.github{
+		display:inline;
+		margin-left:40%;
+		margin-bottom:-50px;
+		border:none;
+	
+	}
+	
+	.twitter, .linkedin{
+		border:none;
+	}
+	.fa-times, .fa-bars{
+		color:red;
+	}
+	.menu ul li a{
+		text-decoration: none;
+		display:inline-block;
+	}
+	
+	.close-btn{
+		position: absolute;	
+		left:170px;
+	
+	
+	}
+	
+	.fa-twitter,.fa-linkedin{
+		color:blue;
+	}
+	
+	
 	
 	
 	
