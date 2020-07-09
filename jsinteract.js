@@ -1,26 +1,20 @@
 // menu bar toggle finctionality
 const menubtn = document.querySelector(".sidebar-toggle");
 const closebtn = document.querySelector(".close-btn");
-const sidebar = document.querySelector('.menu');
+const sidebar = document.querySelector('.menuhide');
 
 
 menubtn.addEventListener('click', function(){
-    if (sidebar.classList.contains("menu")){
-        sidebar.classList.remove("menu");
+    if (sidebar.classList.contains("menuhide")){
+        sidebar.classList.remove("menuhide");
     }
-    else{
-        sidebar.classList.add("menu");
-    }
+
 
 });
 
-//closebtn.addEventListener('click', function(){
-  //  if (sidebar.classList.contains("menu")){
-  //      sidebar.classList.remonve("menu");
-  //  }
-
-//});
-
+closebtn.addEventListener('click', function(){
+    sidebar.classList.remove("showmenu");
+});
 
 
 
