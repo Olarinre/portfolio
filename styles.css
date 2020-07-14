@@ -13,15 +13,25 @@
 		border-radius:20px;
 	}
 
-	img.logo{
-		display:inline-block;
-		width:500px;
-		height:500px;
-		margin-top:-150px;
-		margin-left:-80px;
-		margin-bottom:-300px;
-		position:relative;
+	ul.list{
+		margin:0 0 0 2%;
+		line-height:2;
+	}
 
+	p.name{
+		position:relative;
+		display:inline;
+		color:white;
+		margin-top:-50px;
+		font-family: 'Galada', cursive;
+	}
+
+	h3.name{
+		font-size:24px;
+		margin-top:2%;
+		margin-bottom: 0;
+		color:#cf5c3f;
+		font-family: 'Galada', cursive;
 		
 	}
 	nav{
@@ -153,20 +163,21 @@
 	aside h2{
 		padding:0 0 0 5%;
 		color:#cf5c3f;
+		font-family: 'Galada', cursive;
 	}
 	.maincontent .mainarticle header h2{
 		color:#cf5c3f ;
-		display: inline-block;
-		overflow: hidden;
+		display: inline;
 		margin:0;
+		font-family: 'Galada', cursive;
 	}
 	.maincontent .mainarticle header > img{
 		width:100px;
-		height:100;
+		height:100px;
 		border-radius:50px;
 		-moz-border-radius:50px;
 		-webkit-border-radius:50px;
-		margin: 5% 0 0 50%;
+		margin: 5% 0 0 40%;
 		border:1.5px #cf5c3f dotted;
 
 		
@@ -201,7 +212,7 @@
 	}
 
 	a.default{
-		color:rgb(0, 89, 255);
+		color:grey;
 		display:inline;
 		
 	}
@@ -290,6 +301,24 @@ nav{
 	background: transparent;
 }
 
+aside h2{
+	padding:0 0 0 5%;
+	color:#cf5c3f;
+	font-family: 'Galada', cursive;
+}
+.maincontent .mainarticle header h2{
+	color:#cf5c3f ;
+	display: inline;
+	margin:0;
+	font-family: 'Galada', cursive;
+}
+
+ul.list{
+	margin:0 0 0 2%;
+	line-height:2;
+	display:inline-block;
+}
+
 
 	
 nav ul a li{
@@ -300,17 +329,22 @@ nav ul a li{
 	
 }
 
-img.logo{
-	display:inline;
-	width:400px;
-	height:500px;
-	margin-top:none;
-	margin-left:-60px;
-	margin-bottom:-150px;
+p.name{
 	position:relative;
-	float:left;
-
+	display:inline;
+	color:white;
+	margin-top:-50px;
+	font-family: 'Galada', cursive;
 	
+
+}
+
+h3.name{
+	
+	margin-top:2%;
+	margin-bottom: 0;
+	color:#cf5c3f;
+	font-family: 'Galada', cursive;
 }
 
 img{
@@ -438,19 +472,19 @@ aside{
 /* menu btn*/
 
 i.fas.fa-bars.fa-2x{
-	color:red;
+	color:#cf5c3f;
 }
 
 .fa-times, .fa-bars{
-	color:red;
+	color:#cf5c3f;
 
 }
 
 .sidebar-toggle{
 	display:inline;
 	position:absolute;
-	left:80%;
-	top:70px; 
+	left:85%;
+	top:10px; 
 	position:fixed;
 	cursor: pointer;
 	float:left;
@@ -497,11 +531,11 @@ i.fas.fa-bars.fa-2x{
 
 
 .fa-twitter,.fa-linkedin{
-	color:blue;
+	color:grey;
 }
 
 .contact-icon{
-	color:rgb(0, 89, 255);
+	color:grey;
 	border:none;
 	margin:310px 0 0 0;
 }
@@ -522,7 +556,7 @@ a.black{
 }
 
 a.default{
-	color:rgb(0, 89, 255);
+	color:grey;
 	
 }
 
@@ -567,7 +601,7 @@ a.default{
 	text-decoration: none;
 	align-items:center;
 	justify-content:center;
-	color:red;
+	color:#cf5c3f;
 }
 
 
@@ -613,6 +647,18 @@ a.default{
 	nav{
 		background: transparent;
 	}
+
+	aside h2{
+		padding:0 0 0 5%;
+		color:#cf5c3f;
+		font-family: 'Galada', cursive;
+	}
+	.maincontent .mainarticle header h2{
+		color:#cf5c3f ;
+		display: inline;
+		margin:0;
+		font-family: 'Galada', cursive;
+	}
 	
 	
 		
@@ -622,24 +668,27 @@ a.default{
 		width:100%;
 		height:30%;
 		border-radius:20px;
-	}
-
-	
-
-	img.logo{
-		display:block;
-		width:100%;
-		height:500px;
-		margin-top:none;
-		margin-left:-50px;
-		margin-bottom:none;;
 		float:center;
-		
-		
-	
-		
 	}
 
+	
+
+	p.name{
+		position:relative;
+		display:inline;
+		color:white;
+		margin-top:-50px;
+		font-family: 'Galada', cursive;
+		
+
+	}
+
+	h3.name{
+		margin-top:2%;
+		margin-bottom: 0;
+		color:#cf5c3f;
+		font-family: 'Galada', cursive;
+	}
 	h2.h1{
 		display:block;
 		margin-top:50px;
@@ -650,7 +699,11 @@ a.default{
 		display:none;
 	}
 	
-	
+	ul.list{
+		margin:0 0 0 2%;
+		line-height:2;
+		display:inline-block;
+	}
 	
 	.maincontent{
 		width: 100%;
@@ -715,7 +768,7 @@ a.default{
 		display:inline;
 		position:absolute;
 		left:80%;
-		top:70px; 
+		top:10px; 
 		position:fixed;
 		cursor: pointer;
 		float:left;
@@ -731,8 +784,8 @@ a.default{
 		top:0;
 		left:0;
 		background-color:white;
-		width:100%;
-		height:100%;
+		width:100vw;
+		height:100vh;
 		display:block;
 		transform:translate(-100%);
 		transition:all 0.3s linear;
@@ -780,7 +833,7 @@ a.default{
 		text-decoration: none;
 		align-items:center;
 		justify-content:center;
-		color:red;
+		color:#cf5c3f;
 	}
 	
 	.socialicon{
@@ -795,7 +848,7 @@ a.default{
 	
 	
 	.fa-times, .fa-bars{
-		color:red;
+		color:#cf5c3f;
 	
 	}
 	
@@ -807,7 +860,7 @@ a.default{
 	
 	
 	.fa-twitter,.fa-linkedin{
-		color:blue;
+		color:grey;
 	}
 	
 }
